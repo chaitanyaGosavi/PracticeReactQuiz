@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.App {
+  background: #1b416a;
+  background: radial-gradient(circle, #1b416a 5%, #1c1c1c 58%);
+  background: -moz-radial-gradient(circle, #1b416a 5%, #1c1c1c 58%);
+  background: -webkit-radial-gradient(circle, #1b416a 5%, #1c1c1c 58%);
+}
+
+header h1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cnt {
+  backdrop-filter: blur(10px) saturate(102%);
+  -webkit-backdrop-filter: blur(10px) saturate(102%);
+  background-color: rgba(45, 47, 50, 0.3);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.249);
+}
+
+/* From Uiverse.io by adamgiebl */
+.Start-Quiz {
+  background: #e8e3e3;
+  color: #1b416a;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 10px 5px #8a8a8a;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.Start-Quiz .btn-icon {
+  background: #1b416a;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #8a8a8a;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.Start-Quiz:hover .btn-icon {
+  width: calc(100% - 0.6em);
+}
+
+.Start-Quiz .btn-icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #e8e3e3 !important;
+}
+
+.Start-Quiz:hover .btn-icon svg {
+  transform: translateX(0.1em);
+}
+
+.Start-Quiz:active .btn-icon {
+  transform: scale(0.95);
+}
+
+.next-btn {
+  border: 2px solid #e8e3e3;
+  color: #e8e3e3;
+  font-family: inherit;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 0.05em;
+}
+
+.next-btn:hover{
+  background: #e8e3e3;
+  color: #1b416a;
+
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e8e3e3;
+  border-radius: 20px;
+  height: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #245386;
+  border-radius: 20px;
+}
