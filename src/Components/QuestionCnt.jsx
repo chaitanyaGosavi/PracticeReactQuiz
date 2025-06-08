@@ -91,7 +91,7 @@ const QuestionCnt = ({
         ) : (
           <div className="w-[80%] flex justify-end items-end px-5">
             <button
-              className="next-btn flex justify-center items-center gap-2"
+              className="next-btn lg:text-2xl text-md flex justify-center items-center gap-2"
               onClick={() => {
                 quizDispatch({
                   type: "finished",
